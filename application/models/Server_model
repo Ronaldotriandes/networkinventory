@@ -1,0 +1,7 @@
+<?php
+class Server_model extends CI_Model{
+	fungtion get_server all(){
+		$query=$this->db->query("SELECT * FROM Server WHERE Pemilik ='Diskominfo'");
+		return $quer->result();
+	}
+}
